@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    padding: 5rem 0;
 }
 
 .hero-1 {
@@ -10,14 +11,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5rem;
 }
 
 .hero-2 {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .hero-2>div {
@@ -80,14 +80,15 @@
 
 .wave {
     animation-name: wave-animation;
-    /* Refers to the name of your @keyframes element below */
     animation-duration: 2.5s;
-    /* Change to speed up or slow down */
     animation-iteration-count: infinite;
-    /* Never stop waving :) */
     transform-origin: 70% 70%;
-    /* Pivot around the bottom-left palm */
     display: inline-block;
+}
+
+.icon-cloud {
+    width: 100%;
+    margin: auto;
 }
 
 @keyframes wave-animation {
@@ -99,7 +100,6 @@
         transform: rotate(14.0deg)
     }
 
-    /* The following five values can be played with to make the waving more or less extreme */
     20% {
         transform: rotate(-8.0deg)
     }
@@ -120,12 +120,32 @@
         transform: rotate(0.0deg)
     }
 
-    /* Reset for the last half to pause */
     100% {
         transform: rotate(0.0deg)
     }
 }
 
+@media (max-width: 1280px) {
+    .hero-2>div>div:nth-child(2) h1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-2>div>div:nth-child(2) h1 {
+        font-size: 3.75rem;
+    }
+
+    .icon-cloud {
+        width: 90%;
+    }
+}
+
+@media (max-width: 840px) {
+    .hero-2>div>div:nth-child(2) h1 {
+        font-size: 3rem;
+    }
+}
 
 @media (max-width: 768px) {
     .hero-container {
@@ -133,25 +153,17 @@
     }
 
     .hero-1 {
-        width: 90%;
-        padding-top: 3rem;
+        width: 100%;
     }
 
-    .hero-2>div {
-        text-align: center;
-    }
-
-}
-
-@media (max-width: 1024px) {
-    .hero-2>div>div:nth-child(2) h1{
+    .hero-2>div>div:nth-child(2) h1 {
         font-size: 3.75rem;
     }
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .hero-2>div>div:nth-child(2) h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }

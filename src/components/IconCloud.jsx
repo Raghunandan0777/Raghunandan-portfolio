@@ -34,9 +34,7 @@ const IconCloud = () => {
             reverse: true,
         }}
             containerProps={{
-                style: {
-                    display: 'inline-block'
-                }
+                className: 'icon-cloud'
             }}
         >
             {icons}

@@ -4,7 +4,7 @@
   --clr-bdr: rgb(232, 234, 238);
   --clr-comp: #fff;
   --clr-comp-hover: rgb(237, 243, 248);
-  --clr-accent-base: 249 65 114;
+  --clr-accent-base: 163, 116, 255;
   --clr-accent: rgb(var(--clr-accent-base));
 
   --shadow-1: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -13,13 +13,11 @@
   --tooltip-txt: #fff;
 
   --h1: var(--clr-accent);
-  --h2: #29ab87;
-  --h3: #a374ff;
+  --h2: #17f1d1;
+  --h3: #f94172;
 }
 
 body.dark {
-  --clr-accent: rgb(var(--clr-accent-base));
-  --clr-accent-base: 163, 116, 255;
   --clr-bg: rgb(1, 4, 9);
   --clr-txt: rgb(240, 246, 252);
   --clr-bdr: #3d444d;
@@ -30,8 +28,6 @@ body.dark {
   --tooltip-txt: #333;
 
   --h1: var(--clr-accent);
-  --h2: #f94172;
-  --h3: #17f1d1;
 }
 
 body {
