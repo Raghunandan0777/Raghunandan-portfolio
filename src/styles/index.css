@@ -1,0 +1,60 @@
+:root {
+  --clr-bg: #fff;
+  --clr-txt: rgb(26, 30, 35);
+  --clr-bdr: rgb(232, 234, 238);
+  --clr-comp: #fff;
+  --clr-comp-hover: rgb(237, 243, 248);
+  --clr-accent-base: 249 65 114;
+  --clr-accent: rgb(var(--clr-accent-base));
+
+  --shadow-1: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  --tooltip-bg: #333;
+  --tooltip-txt: #fff;
+
+  --h1: var(--clr-accent);
+  --h2: #29ab87;
+  --h3: #a374ff;
+}
+
+body.dark {
+  --clr-accent: rgb(var(--clr-accent-base));
+  --clr-accent-base: 163, 116, 255;
+  --clr-bg: rgb(1, 4, 9);
+  --clr-txt: rgb(240, 246, 252);
+  --clr-bdr: #3d444d;
+  --clr-comp: rgb(33, 40, 48);
+  --clr-comp-hover: rgb(58, 65, 72);
+
+  --tooltip-bg: #efefef;
+  --tooltip-txt: #333;
+
+  --h1: var(--clr-accent);
+  --h2: #f94172;
+  --h3: #17f1d1;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  background-color: var(--clr-bg);
+  color: var(--clr-txt);
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+button {
+  color: inherit;
+}
+
+svg {
+  fill: currentColor;
+}
+
+a {
+  cursor: none;
+}
