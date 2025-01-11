@@ -21,8 +21,8 @@ const Dock = ({ ...props }) => {
             <DockButton data-tooltip-content="Mail">
                 <SvgIcon icon={Mail} to="mailto:malay77patra@gmail.com" />
             </DockButton>
-            <DockButton data-tooltip-content="Theme">
-                <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+            <DockButton data-tooltip-content="Theme" onClick={toggleTheme}>
+                <ThemeToggle theme={theme} />
             </DockButton>
         </div>
     );

@@ -4,8 +4,13 @@
   --clr-bdr: rgb(232, 234, 238);
   --clr-comp: #fff;
   --clr-comp-hover: rgb(237, 243, 248);
-  --clr-accent-base: 163, 116, 255;
-  --clr-accent: rgb(var(--clr-accent-base));
+  --accent-base-h: 260;
+  --accent-base-s: 100%;
+  --accent-base-l: 73%;
+  --clr-accent: hsl(var(--accent-base-h), var(--accent-base-s), var(--accent-base-l));
+  /* 2 lighter shades of accent  */
+  --clr-accent-l1: hsl(var(--accent-base-h), var(--accent-base-s), calc(var(--accent-base-l) + 5%));
+  --clr-accent-l2: hsl(var(--accent-base-h), var(--accent-base-s), calc(var(--accent-base-l) + 10%));
 
   --shadow-1: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
@@ -13,7 +18,7 @@
   --tooltip-txt: #fff;
 
   --h1: var(--clr-accent);
-  --h2: #17f1d1;
+  --h2: #0fdbbd;
   --h3: #f94172;
 }
 
@@ -27,7 +32,7 @@ body.dark {
   --tooltip-bg: #efefef;
   --tooltip-txt: #333;
 
-  --h1: var(--clr-accent);
+  --h2: #17f1d1;
 }
 
 body {
