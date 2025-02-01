@@ -7,9 +7,10 @@ import { particleNasaTheme } from '../utils/utils'
 import Sparkles from '../components/Sparkles'
 import '../styles/home.css'
 import Quby from '../assets/quby.jpg'
+import urunus from '../assets/urunus.svg'
 import { HL } from '../components/Typography'
-import { Urunus } from '../assets/icons'
 import RandomFloat from '../components/animations/RandomFloat';
+import SpaceBg from '../components/SpaceBg';
 
 
 
@@ -47,7 +48,7 @@ export default function Home() {
                             position: 'relative'
                         }}>
                             <RandomFloat radius={10} speed={500}>
-                                <Urunus className='floating-planet-1' size={'2.5rem'} />
+                                <img src={urunus} className='floating-planet-1' />
                             </RandomFloat>
                             <h1><HL variant={1}>FULLSTACK</HL></h1>
                             <h1><HL variant={2}>DEVELOPER</HL> &</h1>
@@ -57,6 +58,7 @@ export default function Home() {
                 </div>
 
                 <div id="space-container" className='space-container'>
+                    <SpaceBg />
                     {init && (
                         <Particles
                             id="tsparticles"

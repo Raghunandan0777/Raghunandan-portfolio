@@ -55,6 +55,10 @@
     mask: var(--mask);
 }
 
+.dark .space-container {
+    background-color: var(--space-bg-clr);
+}
+
 .malay-img-cont {
     width: 42px;
     height: 42px;
@@ -99,7 +103,57 @@
     z-index: 1;
     height: 2.5rem;
     width: 2.5rem;
+    transform: rotate(45deg);
 }
+
+.cloud-1 {
+    width: 30vw;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    z-index: -1;
+    opacity: .2;
+}
+
+.cloud-2 {
+    width: 30vw;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    transform: scaleX(-1);
+    z-index: -1;
+    opacity: .2;
+}
+
+.cloud-3 {
+    width: 40vw;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    transform: scaleX(-1);
+    z-index: 100;
+    opacity: .1;
+}
+
+.cloud-4 {
+    width: 40vw;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    z-index: 100;
+    opacity: .1;
+}
+
+.dark .cloud-1,
+.dark .cloud-2 {
+    opacity: .7;
+}
+
+.dark .cloud-3,
+.dark .cloud-4 {
+    opacity: .5;
+}
+
 
 @keyframes wave-animation {
     0% {
@@ -154,6 +208,11 @@
 @media (max-width: 840px) {
     .hero-2>div>div:nth-child(2) h1 {
         font-size: 3rem;
+    }
+
+    .floating-planet-1 {
+        height: 2rem;
+        width: 2rem;
     }
 }
 

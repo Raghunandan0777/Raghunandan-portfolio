@@ -7,7 +7,6 @@ import Cursor from './components/Cusror'
 
 function App() {
 
-
   return (
     <>
       <Home />
