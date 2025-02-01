@@ -2,47 +2,61 @@ import { useState, useEffect } from "react";
 
 export default function TooltipManager() {
     const [tooltips, setTooltips] = useState({});
+    const [isMouseDevice, setIsMouseDevice] = useState(true);
 
-    const calculatePos = (tooltipBound, targetBound, screenBound, margin = 16, pos = "auto") => {
-        const setToTop = () => {
-            const left = targetBound.x + (targetBound.width / 2) - (tooltipBound.width / 2);
-            const top = targetBound.y - tooltipBound.height - margin;
-            return { left: left, top: top, v: 'top' };
-        }
+    useEffect(() => {
+        const detectMouseDevice = () => {
+            const hasPointer = window.matchMedia("(pointer: fine)").matches;
+            const isTouchDevice = navigator.maxTouchPoints > 0;
+            setIsMouseDevice(hasPointer && !isTouchDevice);
+        };
 
-        const setToBottom = () => {
-            const left = targetBound.x + (targetBound.width / 2) - (tooltipBound.width / 2);
-            const top = targetBound.y + targetBound.height + margin;
-            return { left: left, top: top, v: 'bottom' };
-        }
+        detectMouseDevice();
+        window.addEventListener('resize', detectMouseDevice);
+        window.addEventListener('orientationchange', detectMouseDevice);
 
-        const setToLeft = () => {
-            const left = targetBound.x - tooltipBound.width - margin;
-            const top = targetBound.y + (targetBound.height / 2) - (tooltipBound.height / 2);
-            return { left: left, top: top, v: 'left' };
-        }
+        return () => {
+            window.removeEventListener('resize', detectMouseDevice);
+            window.removeEventListener('orientationchange', detectMouseDevice);
+        };
+    }, []);
 
-        const setToRight = () => {
-            const left = targetBound.x + targetBound.width + margin;
-            const top = targetBound.y + (targetBound.height / 2) - (tooltipBound.height / 2);
-            return { left: left, top: top, v: 'right' };
-        }
+    const calculatePos = (tooltipBound, targetBound, screenBound, margin = 16) => {
+        const setToTop = () => ({
+            left: targetBound.x + targetBound.width / 2 - tooltipBound.width / 2,
+            top: targetBound.y - tooltipBound.height - margin,
+            v: 'top'
+        });
+
+        const setToBottom = () => ({
+            left: targetBound.x + targetBound.width / 2 - tooltipBound.width / 2,
+            top: targetBound.y + targetBound.height + margin,
+            v: 'bottom'
+        });
+
+        const setToLeft = () => ({
+            left: targetBound.x - tooltipBound.width - margin,
+            top: targetBound.y + targetBound.height / 2 - tooltipBound.height / 2,
+            v: 'left'
+        });
+
+        const setToRight = () => ({
+            left: targetBound.x + targetBound.width + margin,
+            top: targetBound.y + targetBound.height / 2 - tooltipBound.height / 2,
+            v: 'right'
+        });
 
         const adjustToScreen = (pos) => {
-            const v = pos.v;
-            if (v === 'top') {
-                pos.top = Math.max(pos.top, screenBound.y);
-            } else if (v === 'bottom') {
-                pos.top = Math.min(pos.top, screenBound.height - tooltipBound.height);
-            } else if (v === 'left') {
-                pos.left = Math.max(pos.left, screenBound.x);
-            } else if (v === 'right') {
-                pos.left = Math.min(pos.left, screenBound.width - tooltipBound.width);
-            }
+            const { v } = pos;
+            if (v === 'top') pos.top = Math.max(pos.top, screenBound.y);
+            if (v === 'bottom') pos.top = Math.min(pos.top, screenBound.height - tooltipBound.height);
+            if (v === 'left') pos.left = Math.max(pos.left, screenBound.x);
+            if (v === 'right') pos.left = Math.min(pos.left, screenBound.width - tooltipBound.width);
             return pos;
-        }
+        };
 
         const positions = [setToTop, setToBottom, setToLeft, setToRight];
+
         for (const positionFn of positions) {
             const result = positionFn();
             const adjusted = adjustToScreen(result);
@@ -57,16 +71,16 @@ export default function TooltipManager() {
         }
 
         return adjustToScreen(setToTop());
-    }
+    };
 
     const createTooltip = (element) => {
-        const content = element.getAttribute('data-tooltip-content').trim();
+        if (!isMouseDevice) return null; // Prevent tooltip creation on touch devices
+
+        const content = element.getAttribute('data-tooltip-content')?.trim();
         if (!content) return;
 
-        // Create a unique ID for this tooltip instance
         const tooltipId = `tooltip-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
 
-        // Create and append temporary tooltip element to get its dimensions
         const tempTooltip = document.createElement('span');
         tempTooltip.className = 'tooltip';
         tempTooltip.style.visibility = 'hidden';
@@ -83,22 +97,15 @@ export default function TooltipManager() {
         };
 
         const position = calculatePos(tooltipBound, targetBound, screenBound);
-
-        // Remove temporary tooltip
         document.body.removeChild(tempTooltip);
 
-        // Add new tooltip to state
         setTooltips(prev => ({
             ...prev,
-            [tooltipId]: {
-                content,
-                position,
-                id: tooltipId
-            }
+            [tooltipId]: { content, position, id: tooltipId }
         }));
 
         return tooltipId;
-    }
+    };
 
     const removeTooltip = (tooltipId) => {
         setTooltips(prev => {
@@ -106,40 +113,32 @@ export default function TooltipManager() {
             delete newTooltips[tooltipId];
             return newTooltips;
         });
-    }
+    };
 
     useEffect(() => {
+        if (!isMouseDevice) return; // Stop event listeners if no mouse
+
         const tooltipElements = document.querySelectorAll('[data-tooltip-content]');
         const activeTooltips = new Map();
 
         const handleMouseEnter = (e) => {
             const element = e.target;
-            const content = element.getAttribute('data-tooltip-content').trim();
-            if (!content) return;
-
             const delay = parseInt(element.getAttribute('data-tooltip-delay'), 10) || 1000;
             const timeoutId = setTimeout(() => {
                 const tooltipId = createTooltip(element);
-                if (tooltipId) {
-                    activeTooltips.set(element, tooltipId);
-                }
+                if (tooltipId) activeTooltips.set(element, tooltipId);
             }, delay);
-
-            // Store timeout ID for cleanup
             element.dataset.tooltipTimeout = timeoutId;
         };
 
         const handleMouseLeave = (e) => {
             const element = e.target;
-
-            // Clear timeout if tooltip hasn't appeared yet
             const timeoutId = element.dataset.tooltipTimeout;
             if (timeoutId) {
                 clearTimeout(Number(timeoutId));
                 delete element.dataset.tooltipTimeout;
             }
 
-            // Remove tooltip if it exists
             const tooltipId = activeTooltips.get(element);
             if (tooltipId) {
                 removeTooltip(tooltipId);
@@ -157,14 +156,13 @@ export default function TooltipManager() {
                 element.removeEventListener('mouseenter', handleMouseEnter);
                 element.removeEventListener('mouseleave', handleMouseLeave);
 
-                // Clear any remaining timeouts
                 const timeoutId = element.dataset.tooltipTimeout;
-                if (timeoutId) {
-                    clearTimeout(Number(timeoutId));
-                }
+                if (timeoutId) clearTimeout(Number(timeoutId));
             });
         };
-    }, []);
+    }, [isMouseDevice]);
+
+    if (!isMouseDevice) return null; // Prevent rendering tooltips on touch devices
 
     return (
         <>

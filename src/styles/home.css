@@ -71,7 +71,7 @@
 .malay-img {
     width: 100%;
     border-radius: 100px;
-    border: 2px solid var(--clr-accent);
+    border: 2px solid var(--clr-bdr);
     z-index: 10;
     transition: all .3s ease-in-out;
 }
@@ -96,18 +96,9 @@
     margin: auto;
 }
 
-.floating-planet-1 {
-    position: absolute;
-    top: 0;
-    left: -1rem;
-    z-index: 1;
-    height: 2.5rem;
-    width: 2.5rem;
-    transform: rotate(45deg);
-}
 
 .cloud-1 {
-    width: 30vw;
+    width: 35vw;
     position: absolute;
     top: -10px;
     left: 0;
@@ -116,7 +107,7 @@
 }
 
 .cloud-2 {
-    width: 30vw;
+    width: 35vw;
     position: absolute;
     top: -10px;
     right: 0;
@@ -126,7 +117,7 @@
 }
 
 .cloud-3 {
-    width: 40vw;
+    width: 45vw;
     position: absolute;
     top: -10px;
     right: 0;
@@ -136,7 +127,7 @@
 }
 
 .cloud-4 {
-    width: 40vw;
+    width: 45vw;
     position: absolute;
     top: -10px;
     left: 0;
@@ -146,7 +137,7 @@
 
 .dark .cloud-1,
 .dark .cloud-2 {
-    opacity: .7;
+    opacity: 1;
 }
 
 .dark .cloud-3,
@@ -210,9 +201,11 @@
         font-size: 3rem;
     }
 
-    .floating-planet-1 {
-        height: 2rem;
-        width: 2rem;
+    .cloud-1,
+    .cloud-2,
+    .cloud-3,
+    .cloud-4 {
+        top: -5px;
     }
 }
 

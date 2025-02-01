@@ -7,9 +7,6 @@ import { particleNasaTheme } from '../utils/utils'
 import Sparkles from '../components/Sparkles'
 import '../styles/home.css'
 import Quby from '../assets/quby.jpg'
-import urunus from '../assets/urunus.svg'
-import { HL } from '../components/Typography'
-import RandomFloat from '../components/animations/RandomFloat';
 import SpaceBg from '../components/SpaceBg';
 
 
@@ -47,12 +44,9 @@ export default function Home() {
                         <div style={{
                             position: 'relative'
                         }}>
-                            <RandomFloat radius={10} speed={500}>
-                                <img src={urunus} className='floating-planet-1' />
-                            </RandomFloat>
-                            <h1><HL variant={1}>FULLSTACK</HL></h1>
-                            <h1><HL variant={2}>DEVELOPER</HL> &</h1>
-                            <h1><HL variant={3}>API</HL> EXPERT</h1>
+                            <h1>FULLSTACK</h1>
+                            <h1>DEVELOPER &</h1>
+                            <h1>API EXPERT</h1>
                         </div>
                     </div>
                 </div>

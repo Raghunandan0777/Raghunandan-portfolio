@@ -6,12 +6,12 @@ const sizeMap = {
     large: 32,
 };
 
-export default function SvgIcon({ icon: Icon, size = "medium", to = '', ...props }) {
+export default function SvgIcon({ icon: Icon, size = "medium", to = '', target='_self', ...props }) {
     const iconSize = sizeMap[size] || sizeMap.medium;
 
     if (to) {
         return (
-            <a href={to} className="pseudo-a">
+            <a href={to} target={target} className="pseudo-a">
                 <Icon
                     width={iconSize}
                     height={iconSize}
