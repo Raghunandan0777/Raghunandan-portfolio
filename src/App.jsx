@@ -5,6 +5,7 @@ import './styles/app.css'
 import Home from './sections/Home'
 import About from './sections/About'
 import Skills from './sections/Skills'
+import Experience from './sections/Experience'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Experience />
       <Dock />
       <Tooltip />
     </>

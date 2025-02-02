@@ -146,7 +146,7 @@
     border: none;
     padding: .75rem .8rem;
     background-color: var(--clr-accent);
-    color: #ffffff;
+    color: var(--clr-bg);
     line-height: 1rem;
     font-weight: 700;
     cursor: pointer;
@@ -171,10 +171,8 @@
     background-color: var(--clr-comp);
     padding: 12px;
     border-radius: 12px;
-    border: 1px solid var(--clr);
+    border: 1px solid var(--clr-bdr);
     margin-bottom: 1rem;
-    color: var(--clr);
-    transition: all .3s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -184,7 +182,6 @@
     align-items: center;
     justify-content: flex-start;
     gap: 4px;
-    color: inherit;
     text-transform: uppercase;
 }
 
@@ -197,13 +194,25 @@
 }
 
 .skill-list li {
-    color: var(--clr-comp);
-    background: var(--clr);
-    padding: 4px 8px;
+    color: var(--clr-txt);
+    background: var(--clr-comp-hover);
+    border: 1px solid var(--clr-bdr);
+    padding: 8px 12px;
     border-radius: 8px;
     font-size: 14px;
     font-weight: 700;
+    transition: all ease-in-out .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
 }
+
+.skill-list li:hover {
+    background: var(--clr);
+    color: var(--clr-comp);
+}
+
 
 
 

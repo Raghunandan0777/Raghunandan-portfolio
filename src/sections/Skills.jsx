@@ -1,45 +1,46 @@
 import SkillCard from '../components/SkillCard'
+import quby from '../assets/quby.jpg'
 
 export default function Skills() {
+    console.log(quby)
+
     return (
         <div className='skills-section section'>
             <h2>Skills</h2>
-            <SkillCard heading='Frontend' color='var(--clr-accent)' skills={[
-                'HTML',
-                'CSS',
-                'JavaScript',
-                'React',
-                'Bootstrap',
-                'Tailwind CSS',
-                'Material-UI',
-                'Magic-UI',
+            <SkillCard heading='Frontend' skills={[
+                { 'name': 'HTML', 'icon': 'html5' },
+                { 'name': 'CSS', 'icon': 'css3' },
+                { 'name': 'JavaScript', 'icon': 'javascript' },
+                { 'name': 'React', 'icon': 'react' },
+                { 'name': 'Bootstrap', 'icon': 'bootstrap' },
+                { 'name': 'Tailwind CSS', 'icon': 'tailwindcss' },
+                { 'name': 'Material-UI', 'icon': 'materialui' },
             ]} />
-            <SkillCard heading='Backend' color='#1d7abd' skills={[
-                'Node.js',
-                'Express',
-                'Python',
-                'Flask',
-                'REST API',
-                'MongoDB'
+            <SkillCard heading='Backend' hcolor="var(--clr-accent2)" skills={[
+                { 'name': 'Node.js', 'icon': 'nodejs' },
+                { 'name': 'Express', 'icon': 'express' },
+                { 'name': 'Python', 'icon': 'python' },
+                { 'name': 'Flask', 'icon': 'flask' },
+                { 'name': 'MongoDB', 'icon': 'mongodb' },
             ]} />
-            <SkillCard heading='Tools' color='#ff8709' skills={[
-                'Git',
-                'GitHub',
-                'VS Code',
-                'Postman',
-                'Heroku',
-                'Netlify',
-                'Vercel',
-                'Figma'
+            <SkillCard heading='Tools' hcolor="var(--clr-accent3)" skills={[
+                { 'name': 'Git', 'icon': 'git' },
+                { 'name': 'GitHub', 'icon': 'github' },
+                { 'name': 'VS Code', 'icon': 'vscode' },
+                { 'name': 'Postman', 'icon': 'postman' },
+                { 'name': 'Heroku', 'icon': 'heroku' },
+                { 'name': 'Netlify', 'icon': 'netlify' },
+                { 'name': 'Vercel', 'icon': 'vercel' },
+                { 'name': 'Figma', 'icon': 'figma' },
             ]} />
-            <SkillCard heading='Automation' color='#f34b7d' skills={[
-                'Selenium',
-                'Puppeteer',
-                'OpenAI',
-                'Web Scraping',
-                'DeepSeek',
-                'Gemini',
-                'Hugginface'
+            <SkillCard heading='Automation' hcolor="var(--clr-sec)" skills={[
+                { 'name': 'Selenium', 'icon': 'selenium' },
+                { 'name': 'Puppeteer', 'icon': 'puppeteer' },
+                { 'name': 'OpenAI', 'icon': 'https://simpleicons.org/icons/openai.svg' },
+                { 'name': 'Web Scraping', 'icon': '' },
+                { 'name': 'DeepSeek', 'icon': '' },
+                { 'name': 'Gemini', 'icon': 'https://simpleicons.org/icons/googlegemini.svg' },
+                { 'name': 'Hugginface', 'icon': 'https://simpleicons.org/icons/huggingface.svg' },
             ]} />
 
         </div>

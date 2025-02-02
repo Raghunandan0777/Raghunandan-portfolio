@@ -145,6 +145,10 @@
     opacity: .5;
 }
 
+.hero-text-cont {
+    color: var(--clr-accent3);
+}
+
 .outlined-txt {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--clr-accent);
@@ -164,6 +168,7 @@
     text-decoration: none;
     white-space: nowrap;
 }
+
 
 @keyframes shine {
     0% {

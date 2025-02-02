@@ -6,13 +6,10 @@
   --clr-comp-hover: rgb(237, 243, 248);
   --clr-p: #333;
 
-  --accent-base-h: 260;
-  --accent-base-s: 100%;
-  --accent-base-l: 73%;
-  --clr-accent: hsl(var(--accent-base-h), var(--accent-base-s), var(--accent-base-l));
-  /* 2 lighter shades of accent  */
-  --clr-accent-l1: hsl(var(--accent-base-h), var(--accent-base-s), calc(var(--accent-base-l) + 5%));
-  --clr-accent-l2: hsl(var(--accent-base-h), var(--accent-base-s), calc(var(--accent-base-l) + 10%));
+  --clr-accent: #1F509A;
+  --clr-accent2: #6C48C5;
+  --clr-accent3: #C68FE6;
+  --clr-sec: #E82561;
 
   --shadow-1: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --shadow-2: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
@@ -28,10 +25,14 @@ body.dark {
   --clr-bdr: #3d444d;
   --clr-comp: rgb(33, 40, 48);
   --clr-comp-hover: rgb(58, 65, 72);
-  --clr-p: #e3e4ff;
 
   --tooltip-bg: #efefef;
   --tooltip-txt: #333;
+  
+  --clr-accent: #C5BAFF;
+  --clr-accent2: #C4D9FF;
+  --clr-accent3: #C68FE6;
+  --clr-sec: #E82561;
 
 }
 
@@ -82,8 +83,12 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: var(--clr-accent2);
+}
+
 p {
-  color: var(--clr-p);
+  color: inherit;
 }
 
 .section {
