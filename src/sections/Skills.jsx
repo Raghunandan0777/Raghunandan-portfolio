@@ -1,5 +1,4 @@
 import SkillCard from '../components/SkillCard'
-import quby from '../assets/quby.jpg'
 
 export default function Skills() {
 

@@ -6,7 +6,7 @@
   --clr-comp-hover: rgb(237, 243, 248);
   --clr-p: #333;
 
-  --clr-accent: #1F509A;
+  --clr-accent: #488aec;
   --clr-accent2: #6C48C5;
   --clr-accent3: #C68FE6;
   --clr-sec: #E82561;
@@ -29,8 +29,8 @@ body.dark {
   --tooltip-bg: #efefef;
   --tooltip-txt: #333;
   
-  --clr-accent: #C5BAFF;
-  --clr-accent2: #C4D9FF;
+  --clr-accent: #488aec;
+  --clr-accent2: #7896f8;
   --clr-accent3: #C68FE6;
   --clr-sec: #E82561;
 

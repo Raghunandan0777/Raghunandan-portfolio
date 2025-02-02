@@ -6,7 +6,7 @@ const sizeMap = {
     large: 32,
 };
 
-export default function SvgIcon({ icon: Icon, size = "medium", to = '', target='_self', ...props }) {
+export default function SvgIcon({ icon: Icon, size = "medium", to, target = '_self', ...props }) {
     const iconSize = sizeMap[size] || sizeMap.medium;
 
     if (to) {

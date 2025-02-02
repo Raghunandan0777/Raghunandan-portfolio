@@ -148,7 +148,7 @@
     border: none;
     display: flex;
     padding: 0.75rem 1.5rem;
-    background-color: #488aec;
+    background-color: var(--clr-accent);
     color: #fff;
     font-weight: 700;
     font-size: 16px;
@@ -169,7 +169,6 @@
     box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
 }
 
-.button-1:focus,
 .button-1:active {
     opacity: 0.85;
     box-shadow: none;

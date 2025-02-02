@@ -1,0 +1,27 @@
+.experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.illustration {
+    flex: 1;
+}
+
+.illustration svg {
+    width: 100%;
+    height: auto;
+}
+
+.details {
+    flex: 1;
+    max-width: 500px;
+}
+
+
+
+@media (max-width: 768px) {
+    .experience {
+        flex-direction: column;
+    }
+}
