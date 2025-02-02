@@ -23,7 +23,6 @@ const IconCloud = () => {
 
     return (<>
         <Cloud options={{
-            activeCursor: 'none',
             activeAudio: false,
             outlineMethod: 'none',
             pinchZoom: false,

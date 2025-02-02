@@ -7,6 +7,7 @@ import { particleNasaTheme } from '../utils/utils'
 import Sparkles from '../components/Sparkles'
 import '../styles/home.css'
 import Quby from '../assets/quby.jpg'
+import satelite from '../assets/satelite.svg'
 import SpaceBg from '../components/SpaceBg';
 
 
@@ -41,12 +42,12 @@ export default function Home() {
                             </div>
                             <div>Hi, I'm Malay<span className="wave">👋</span></div>
                         </div>
-                        <div style={{
-                            position: 'relative'
-                        }}>
-                            <h1>FULLSTACK</h1>
-                            <h1>DEVELOPER &</h1>
-                            <h1>API EXPERT</h1>
+                        <div className='hero-text-cont'>
+                            <Sparkles scale={1.5} color="#ff0">
+                                <h1><span className='outlined-txt'>FULLSTACK</span></h1>
+                                <h1><span className='shine-txt'>DEVELOPER</span> &</h1>
+                                <h1><span className='highlight-txt'>API</span> EXPERT</h1>
+                            </Sparkles>
                         </div>
                     </div>
                 </div>

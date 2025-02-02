@@ -145,6 +145,46 @@
     opacity: .5;
 }
 
+.outlined-txt {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--clr-accent);
+    color: transparent;
+}
+
+.shine-txt {
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    background: linear-gradient(to right, var(--clr-accent) 0, white 10%, var(--clr-accent) 20%);
+    background-size: 200%;
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    60% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 200%;
+    }
+}
+
+.highlight-txt {
+    color: var(--clr-accent);
+}
+
+
+
 
 @keyframes wave-animation {
     0% {
