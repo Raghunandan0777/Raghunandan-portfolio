@@ -4,6 +4,7 @@ import Tooltip from './components/Tooltip'
 import './styles/app.css'
 import Home from './sections/Home'
 import About from './sections/About'
+import Skills from './sections/Skills'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     <>
       <Home />
       <About />
+      <Skills />
       <Dock />
       <Tooltip />
     </>

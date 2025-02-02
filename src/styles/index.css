@@ -15,7 +15,7 @@
   --clr-accent-l2: hsl(var(--accent-base-h), var(--accent-base-s), calc(var(--accent-base-l) + 10%));
 
   --shadow-1: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
+  --shadow-2: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
   --tooltip-bg: #333;
   --tooltip-txt: #fff;
 
@@ -90,4 +90,5 @@ p {
   padding: 24px;
   max-width: 1024px;
   margin: auto;
+  padding-bottom: 10vh;
 }

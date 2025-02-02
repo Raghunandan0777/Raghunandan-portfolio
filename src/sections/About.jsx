@@ -1,5 +1,5 @@
 import '../styles/about.css'
-import GradBtn from '../components/GradBtn'
+import Btn1 from '../components/Btn1'
 
 export default function About() {
 
@@ -12,7 +12,7 @@ export default function About() {
       </p>
       <p>Let’s build something great! ✨</p>
       <a href="https://drive.google.com/file/d/1KIIvBZnJ1M9YltAVd6pnbtVzHrXXa5u2/view" target='_blank'>
-        <GradBtn>Resume</GradBtn>
+        <Btn1>Resume</Btn1>
       </a>
     </div>
   )
