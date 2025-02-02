@@ -142,30 +142,46 @@
     z-index: 10000;
 }
 
+/* Buttons  */
+
 .button-1 {
     border: none;
-    padding: .75rem .8rem;
-    background-color: var(--clr-accent);
-    color: var(--clr-bg);
-    line-height: 1rem;
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    background-color: #488aec;
+    color: #fff;
     font-weight: 700;
+    font-size: 16px;
     cursor: pointer;
     text-align: center;
     text-transform: uppercase;
     vertical-align: middle;
+    align-items: center;
+    justify-content: center;
     border-radius: 0.5rem;
     user-select: none;
+    gap: 5px;
+    box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
     transition: all 0.6s ease;
 }
 
 .button-1:hover {
-    box-shadow: var(--shadow-2);
+    box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
 }
 
+.button-1:focus,
 .button-1:active {
     opacity: 0.85;
     box-shadow: none;
 }
+
+.button-1 svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+
+/* Buttons  */
 
 .skill-card {
     background-color: var(--clr-comp);

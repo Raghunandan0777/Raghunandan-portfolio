@@ -1,5 +1,6 @@
 import '../styles/about.css'
-import Btn1 from '../components/Btn1'
+import { Button1 } from '../components/Buttons'
+import { FaFilePdf } from "react-icons/fa";
 
 export default function About() {
 
@@ -12,7 +13,7 @@ export default function About() {
       </p>
       <p>Let’s build something great! ✨</p>
       <a href="https://drive.google.com/file/d/1KIIvBZnJ1M9YltAVd6pnbtVzHrXXa5u2/view" target='_blank'>
-        <Btn1>Resume</Btn1>
+        <Button1 Icon={FaFilePdf}>Resume</Button1>
       </a>
     </div>
   )

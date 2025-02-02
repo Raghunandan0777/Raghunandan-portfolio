@@ -24,10 +24,6 @@ export default function Home() {
         });
     }, []);
 
-    const particlesLoaded = (container) => {
-        console.log(container);
-    };
-
     return (
         <>
             <div className="hero-container">
@@ -57,7 +53,6 @@ export default function Home() {
                     {init && (
                         <Particles
                             id="tsparticles"
-                            loaded={particlesLoaded}
                             options={particleNasaTheme(theme)}
                         />
                     )}

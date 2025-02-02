@@ -2,7 +2,6 @@ import SkillCard from '../components/SkillCard'
 import quby from '../assets/quby.jpg'
 
 export default function Skills() {
-    console.log(quby)
 
     return (
         <div className='skills-section section'>
