@@ -1,23 +1,33 @@
 .experience {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
 .illustration {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .illustration svg {
-    width: 100%;
-    height: auto;
+    width: 500px;
+    height: 500px;
 }
+
 
 .details {
     flex: 1;
     max-width: 500px;
 }
 
+.details h3 {
+    border: 2px solid var(--clr-txt);
+    display: inline-block;
+    padding: 4px;
+}
 
 
 @media (max-width: 768px) {

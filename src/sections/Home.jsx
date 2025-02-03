@@ -6,8 +6,7 @@ import { loadSlim } from "@tsparticles/slim";
 import { particleNasaTheme } from '../utils/utils'
 import Sparkles from '../components/Sparkles'
 import '../styles/home.css'
-import Quby from '../assets/quby.jpg'
-import satelite from '../assets/satelite.svg'
+import Quby from '../assets/quby.png'
 import SpaceBg from '../components/SpaceBg';
 
 

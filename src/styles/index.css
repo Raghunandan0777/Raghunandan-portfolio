@@ -1,15 +1,20 @@
 :root {
   --clr-bg: #fff;
   --clr-txt: rgb(26, 30, 35);
+  --clr-txt-sec: rgba(26, 30, 35, 0.5);
   --clr-bdr: rgb(232, 234, 238);
   --clr-comp: #fff;
   --clr-comp-hover: rgb(237, 243, 248);
-  --clr-p: #333;
 
   --clr-accent: #488aec;
+  --clr-accent-l1: #488aec4f;
+  --clr-accent-l2: #488aec31;
+  --clr-accent-d1: #306cc6;
+
   --clr-accent2: #6C48C5;
   --clr-accent3: #C68FE6;
   --clr-sec: #E82561;
+
 
   --shadow-1: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --shadow-2: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
@@ -19,16 +24,18 @@
   --space-bg-clr: rgb(39, 39, 72);
 }
 
+
 body.dark {
   --clr-bg: rgb(13, 17, 23);
-  --clr-txt: rgb(240, 246, 252);
+  --clr-txt: #dad9ff;
+  --clr-txt-sec: rgba(240, 246, 252, .5);
   --clr-bdr: #3d444d;
   --clr-comp: rgb(33, 40, 48);
   --clr-comp-hover: rgb(58, 65, 72);
 
   --tooltip-bg: #efefef;
   --tooltip-txt: #333;
-  
+
   --clr-accent: #488aec;
   --clr-accent2: #7896f8;
   --clr-accent3: #C68FE6;
@@ -84,7 +91,7 @@ a {
 }
 
 a:hover {
-  color: var(--clr-accent2);
+  color: var(--clr-accent-d1);
 }
 
 p {
