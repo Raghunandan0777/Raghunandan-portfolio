@@ -11,7 +11,7 @@ import Vinoai from '../assets/vinoai.avif'
 
 export default function Experience() {
     return (
-        <div className='about-section section'>
+        <div className='experience-section section'>
             <h2>Work Experience</h2>
             <div className='experience'>
                 <div className="illustration">
@@ -39,7 +39,7 @@ export default function Experience() {
                     </Timeline>
                 </div>
             </div>
-            <div className='experience'>
+            <div className='experience reverse'>
                 <div className='details'>
                     <h3>Open Source Contribution</h3>
                     <p>Actively contributed to open-source projects by developing new features, resolving issues, and enhancing documentation. Engaged with the community through code reviews and discussions to drive improvements.</p>

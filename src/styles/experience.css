@@ -13,8 +13,8 @@
 }
 
 .illustration svg {
-    width: 500px;
-    height: 500px;
+    flex: 1;
+    height: auto;
 }
 
 
@@ -33,5 +33,23 @@
 @media (max-width: 768px) {
     .experience {
         flex-direction: column;
+    }
+
+    .experience.reverse {
+        flex-direction: column-reverse;
+    }
+
+    .illustration svg {
+        width: 90vw;
+        max-width: 500px;
+        max-height: 500px;
+        height: auto;
+    }
+
+    .experience-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
