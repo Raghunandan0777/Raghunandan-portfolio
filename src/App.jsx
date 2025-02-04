@@ -6,6 +6,7 @@ import Home from './sections/Home'
 import About from './sections/About'
 import Skills from './sections/Skills'
 import Experience from './sections/Experience'
+import Education from './sections/Education'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Skills />
       <Experience />
+      <Education />
       <Dock />
       <Tooltip />
     </>

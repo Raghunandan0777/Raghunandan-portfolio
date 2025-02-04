@@ -11,7 +11,7 @@ import Vinoai from '../assets/vinoai.avif'
 
 export default function Experience() {
     return (
-        <div className='experience-section section'>
+        <div className='experience-section section' style={{ paddingBottom: '0' }}>
             <h2>Work Experience</h2>
             <div className='experience'>
                 <div className="illustration">

@@ -24,7 +24,8 @@
 }
 
 .details h3 {
-    border: 2px solid var(--clr-txt);
+    border: 2px solid var(--clr-accent);
+    color: var(--clr-accent);
     display: inline-block;
     padding: 4px;
 }
