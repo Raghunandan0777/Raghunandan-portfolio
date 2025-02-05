@@ -1,4 +1,8 @@
 import React from 'react'
+import Github from '../assets/icons/github.svg?react'
+import Goto from '../assets/icons/goto.svg?react'
+import { Button1 } from '../components/Buttons'
+import SvgIcon from '../components/SvgIcon';
 
 export default function ProjectCard({ children }) {
   return (
@@ -40,4 +44,27 @@ function Tag({ hashtag }) {
   )
 }
 
-export { Holder, Content, Tags, Tag }
+function CardActions({ visit, source }) {
+  return (
+    <div className='project-card-actions'>
+      {visit && (
+        <a href={visit}>
+          <Button1>
+            <SvgIcon icon={Goto} />
+            Visit
+          </Button1>
+        </a>
+      )}
+      {source && (
+        <a href={source}>
+          <Button1>
+            <SvgIcon icon={Github} />
+            Source
+          </Button1>
+        </a>
+      )}
+    </div>
+  )
+}
+
+export { Holder, Content, Tags, Tag, CardActions }

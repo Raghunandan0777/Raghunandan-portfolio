@@ -1,5 +1,5 @@
 import '../styles/projects.css'
-import ProjectCard, { Holder, Content, Tags, Tag } from '../components/ProjectCard'
+import ProjectCard, { Holder, Content, Tags, Tag, CardActions } from '../components/ProjectCard'
 
 export default function Projects() {
   return (
@@ -17,6 +17,7 @@ export default function Projects() {
               <Tag hashtag="JavaScript" />
             </Tags>
           </Content>
+          <CardActions visit="https://live-html-zeta.vercel.app/" source="https://github.com/malay77patra/live-html" />
         </ProjectCard>
         <ProjectCard>
           <img src='malay-patrav1.png' alt='Portfolio v1' />
@@ -28,6 +29,7 @@ export default function Projects() {
               <Tag hashtag="React-Scroll" />
             </Tags>
           </Content>
+          <CardActions visit="https://malaypatra.vercel.app/" source="https://github.com/malay77patra/portfolio" />
         </ProjectCard>
       </Holder>
     </div>
