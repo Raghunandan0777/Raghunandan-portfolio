@@ -338,9 +338,9 @@
 
 .project-card img {
     width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
+    height: 10rem;
     object-fit: cover;
+    object-position: top;
 }
 
 .project-card-content {
