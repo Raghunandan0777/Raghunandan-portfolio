@@ -16,8 +16,9 @@
   --clr-sec: #E82561;
 
 
-  --shadow-1: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --shadow-1: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
   --shadow-2: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
+  --shadow-3: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
   --tooltip-bg: #333;
   --tooltip-txt: #fff;
 
