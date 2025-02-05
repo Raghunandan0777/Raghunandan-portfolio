@@ -1,15 +1,6 @@
 import React from 'react'
 
-export default function ProjectCard({ children, to }) {
-  if (to) {
-    return (
-      <div className='project-card'>
-        <a href={to} target="_blank">
-          {children}
-        </a>
-      </div>
-    )
-  }
+export default function ProjectCard({ children }) {
   return (
     <div className='project-card'>
       {children}

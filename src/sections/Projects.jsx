@@ -6,7 +6,7 @@ export default function Projects() {
     <div className='section projects-section'>
       <h2>Projects</h2>
       <Holder>
-        <ProjectCard to="https://live-html-zeta.vercel.app/">
+        <ProjectCard>
           <img src='live-html.png' alt='Live Html Editor' />
           <Content>
             <h3>Live Html Editor</h3>
@@ -18,7 +18,7 @@ export default function Projects() {
             </Tags>
           </Content>
         </ProjectCard>
-        <ProjectCard to="https://malaypatra.vercel.app/">
+        <ProjectCard>
           <img src='malay-patrav1.png' alt='Portfolio v1' />
           <Content>
             <h3>Malay Patra, Portfolio v1</h3>

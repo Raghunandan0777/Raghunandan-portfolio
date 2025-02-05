@@ -328,14 +328,6 @@
     box-shadow: var(--shadow-1);
 }
 
-.project-card>a {
-    color: inherit;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
 .project-card img {
     width: 100%;
     height: 10rem;
@@ -374,7 +366,7 @@
     flex-wrap: wrap;
     gap: .25rem;
     margin-top: auto;
-    color: var(--clr-accent3);
+    color: var(--clr-accent);
 }
 
 .project-card-tag {
