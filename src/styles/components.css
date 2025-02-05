@@ -398,6 +398,63 @@
     padding: .5rem .75rem;
 }
 
+.review-card {
+    padding: 1rem;
+    border: 1px solid var(--clr-bdr);
+    margin: 0 .5rem;
+    border-radius: .75rem;
+    background-color: var(--clr-comp);
+    max-width: 16rem;
+    height: 10rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    user-select: none;
+    overflow-y: hidden;
+}
+
+.review-card:hover {
+    background-color: var(--clr-comp-hover);
+}
+
+.review-card .user {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.review-card .user h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.review-card .user p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--clr-txt-sec);
+}
+
+.review-card .user img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.review-card .user .img {
+    background-color: var(--clr-bg);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-card>p {
+    margin: 0;
+    margin-top: 1rem;
+}
+
 
 
 @keyframes comeInOut {
