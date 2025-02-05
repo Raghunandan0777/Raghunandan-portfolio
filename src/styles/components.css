@@ -374,6 +374,7 @@
     flex-wrap: wrap;
     gap: .25rem;
     margin-top: auto;
+    color: var(--clr-accent3);
 }
 
 .project-card-tag {
