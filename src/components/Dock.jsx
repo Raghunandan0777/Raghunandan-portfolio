@@ -19,7 +19,7 @@ const Dock = ({ ...props }) => {
                 <SvgIcon icon={Linkedin} target="_blank" to="https://www.linkedin.com/in/malaypatra/" />
             </DockButton>
             <DockButton data-tooltip-content="Mail">
-                <SvgIcon icon={Mail} target="_blank" to="mailto:malay77patra@gmail.com" />
+                <SvgIcon icon={Mail} target="_blank" to="mailto:malay88patra@gmail.com" />
             </DockButton>
             <DockButton data-tooltip-content="Theme" onClick={toggleTheme}>
                 <ThemeToggle theme={theme} />
