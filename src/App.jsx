@@ -9,7 +9,6 @@ import Experience from './sections/Experience'
 import Education from './sections/Education'
 import Projects from './sections/Projects'
 import Contact from './sections/Contact'
-import PlaneAnimation from './components/PlaneAnimation'
 
 function App() {
 
