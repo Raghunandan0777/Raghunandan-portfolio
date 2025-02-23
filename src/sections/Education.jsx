@@ -19,8 +19,8 @@ export default function Education() {
                         <TimelineItem icon={<School />} bgColor="#444444">
                             <h4>ENV High School [10+2]</h4>
                             <TimeStamp stamp="2014 - 2022" />
-                            <p>10th grade percentage: xx% (School topper)</p>
-                            <p>12th grade percentage: xx%</p>
+                            <p>10th grade percentage: 84.85%</p>
+                            <p>12th grade percentage: 78.6%</p>
                         </TimelineItem>
                         <TimelineItem icon={<College />} bgColor="#444444">
                             <h4>Jadavpur University [B.E.]</h4>
