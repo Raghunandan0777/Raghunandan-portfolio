@@ -37,7 +37,7 @@ export default function Home() {
                             </div>
                             <div>Hi, I'm Malay<span className="wave">👋</span></div>
                         </div>
-                        <div className='hero-text-cont'>
+                        <div>
                             <Sparkles scale={1.5} color="#ff0">
                                 <h1><span className='outlined-txt'>FULLSTACK</span></h1>
                                 <h1><span className='shine-txt'>DEVELOPER</span> &</h1>
