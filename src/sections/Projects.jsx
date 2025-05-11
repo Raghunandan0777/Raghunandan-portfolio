@@ -7,17 +7,48 @@ export default function Projects() {
       <h2>Projects</h2>
       <Holder>
         <ProjectCard>
-          <img src='live-html.png' alt='Live Html Editor' />
+          <img src='upmagic.png' alt='Upmagic' />
           <Content>
-            <h3>Live Html Editor</h3>
-            <p>A super lightweight and user-friendly live HTML editor that runs directly in your browser. It allows you to write, edit, and preview HTML code in real-time, making it an excellent tool for web developers and designers to quickly prototype and test their code.</p>
+            <h3>Upmagic</h3>
+            <p>An AI-powered Upwork proposal generator that creates compelling proposals with just one click. Built using the secret strategies and proven techniques of top-rated freelancers to help you land more jobs and stand out from the competition.</p>
             <Tags>
-              <Tag hashtag="Html5" />
-              <Tag hashtag="Css3" />
-              <Tag hashtag="JavaScript" />
+              <Tag hashtag="React" />
+              <Tag hashtag="GenAI" />
+              <Tag hashtag="Nextjs" />
+              <Tag hashtag="Tailwind Css" />
             </Tags>
           </Content>
-          <CardActions visit="https://live-html-zeta.vercel.app/" source="https://github.com/malay77patra/live-html" />
+          <CardActions visit="https://upmagic.vercel.app" source="https://github.com/malay77patra/upmagic" />
+        </ProjectCard>
+        <ProjectCard>
+          <img src='physoxy.png' alt='Physoxy' />
+          <Content>
+            <h3>Physoxy</h3>
+            <p>A full-stack, production-ready web app with secure JWT authentication, role-based access, and user subscriptions. Features a decoupled architecture, email verification, theme support, and admin tools—all and many more.</p>
+            <Tags>
+              <Tag hashtag="React" />
+              <Tag hashtag="Mongodb" />
+              <Tag hashtag="Express js" />
+              <Tag hashtag="Tailwind Css" />
+              <Tag hashtag="daisy UI" />
+            </Tags>
+          </Content>
+          <CardActions visit="https://physoxy.vercel.app" source="https://github.com/malay77patra/Physoxy" />
+        </ProjectCard>
+        <ProjectCard>
+          <img src='flamecoders.png' alt='Flamecoders' />
+          <Content>
+            <h3>Flamecoders</h3>
+            <p>A full-stack article platform with a rich markdown editor, theme support, and secure JWT-based auth. Designed with scalable, decoupled architecture and production-grade structure for seamless writing, deployment, and user experience.</p>
+            <Tags>
+              <Tag hashtag="React" />
+              <Tag hashtag="Mongodb" />
+              <Tag hashtag="Express js" />
+              <Tag hashtag="Tailwind Css" />
+              <Tag hashtag="daisy UI" />
+            </Tags>
+          </Content>
+          <CardActions visit="https://flamecoders.vercel.app/" source="https://github.com/malay77patra/flamecoders-frontend" />
         </ProjectCard>
         <ProjectCard>
           <img src='malay-patrav1.png' alt='Portfolio v1' />
