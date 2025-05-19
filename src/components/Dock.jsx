@@ -12,6 +12,15 @@ const Dock = ({ ...props }) => {
 
     return (
         <div className="dock" {...props} >
+            <img
+                src={theme === "dark" ? "logo.svg" : "logo-dark.svg"}
+                height="24"
+                width="24"
+                alt="Logo"
+                style={{
+                    padding: "0.5rem",
+                }}
+            />
             <DockButton data-tooltip-content="Github" >
                 <SvgIcon icon={Github} target="_blank" to="https://github.com/malay77patra" />
             </DockButton>

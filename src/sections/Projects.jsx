@@ -21,6 +21,21 @@ export default function Projects() {
           <CardActions visit="https://upmagic.vercel.app" source="https://github.com/malay77patra/upmagic" />
         </ProjectCard>
         <ProjectCard>
+          <img src='hotkeys.png' alt='HOTKEYS' />
+          <Content>
+            <h3>HOTKEYS</h3>
+            <p>Learn the keys, kill the 🐀. Master keyboard shortcuts with ease. Discover, learn, and use hotkeys faster than ever. Boost your productivity - No more guessing - No more clicking - Just pure flow.</p>
+            <Tags>
+              <Tag hashtag="Nextjs" />
+              <Tag hashtag="Reactjs" />
+              <Tag hashtag="shadcn/ui" />
+              <Tag hashtag="MagicUI" />
+              <Tag hashtag="TailwindCSS" />
+            </Tags>
+          </Content>
+          <CardActions visit="https://hotkeys-iota.vercel.app" source="https://github.com/malay77patra/hotkeys" />
+        </ProjectCard>
+        <ProjectCard>
           <img src='physoxy.png' alt='Physoxy' />
           <Content>
             <h3>Physoxy</h3>
