@@ -13,6 +13,22 @@ export default function Experience() {
     return (
         <div className='experience-section section' style={{ paddingBottom: '0' }}>
             <h2>Work Experience</h2>
+            <div className='experience reverse'>
+                <div className='details'>
+                    <h3>Internships</h3>
+                    <p>Actively contributed to open-source projects by developing new features, resolving issues, and enhancing documentation. Engaged with the community through code reviews and discussions to drive improvements.</p>
+                    <Timeline>
+                        <TimelineItem icon={<Github />} color="#0745a3" to="https://github.com">
+                            <h4>Github</h4>
+                            <TimeStamp stamp="2022 - now" />
+                            <p>Maintained and contributed to repositories, collaborating on code, issues, and pull requests.</p>
+                        </TimelineItem>
+                    </Timeline>
+                </div>
+                <div className="illustration">
+                    <Opensource />
+                </div>
+            </div>
             <div className='experience'>
                 <div className="illustration">
                     <Freelancing />
