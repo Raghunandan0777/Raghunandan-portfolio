@@ -5,7 +5,7 @@ export default function Card({ heading = ' ', skills = [], hcolor = 'var(--clr-a
     return (
       <>
         {skills.map((skill, index) => (
-          <li key={index} className='skill-list-li' style={{ '--clr': hcolor }}>
+          <li key={index} className='skill-list-li play' style={{ '--clr': hcolor }}>
             {skill.icon && <img src={skill.icon.startsWith('https://') ? skill.icon : `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${skill.icon}/${skill.icon}-original.svg`} alt={skill.name} width="16px" height="16px" />}
             <span>{skill.name}</span>
           </li>

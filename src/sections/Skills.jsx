@@ -2,9 +2,11 @@ import { useState } from 'react'
 import SkillCard from '../components/SkillCard'
 import Toggle from '../components/Toggle';
 import '../styles/Skills.css'
+import { useCursor } from '../hooks/useCursor';
 
 export default function Skills() {
     const [playMode, setPlayMode] = useState(false);
+    const { hasCursor } = useCursor();
 
     const handleToggle = () => {
         setPlayMode(!playMode);
@@ -17,10 +19,12 @@ export default function Skills() {
                 <div style={{
                     flex: 1
                 }}></div>
-                <div className='play-mode'>
-                    <p>Play mode</p>
-                    <Toggle value={playMode} onToggle={handleToggle} />
-                </div>
+                {hasCursor && (
+                    <div className='play-mode'>
+                        <p>Play mode</p>
+                        <Toggle value={playMode} onToggle={handleToggle} />
+                    </div>
+                )}
             </div>
             {playMode && (
                 <p className='play-info'>
