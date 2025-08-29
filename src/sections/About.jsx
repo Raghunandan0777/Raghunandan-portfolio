@@ -9,7 +9,13 @@ export default function About() {
     <div className='about-section section'>
       <h2>About</h2>
       <p>
-        I’m <span className="hl">Malay Patra</span>, an undergraduate (2028) engineering student at <a href='https://jadavpuruniversity.in/' target="_blank">Jadavpur University</a>, passionate about building dynamic and efficient web applications using the <span className="hl">MERN stack</span>. Over the past two years, I’ve worked as a <a href='https://www.upwork.com/freelancers/~013f6c37770776680c' target="_blank">freelancer</a>, including a notable stint with <a href='https://www.vino-app.com/' target="_blank">Vino AI</a>, honing my expertise in web development and automation. I currently work as a Fullstack SDE Intern at <a href='https://souloxy.com/' target="_blank">Souloxy</a>, where I continue to grow my skills in real-world projects. I also integrate <span className="hl">AI and APIs</span> into prebuilt systems to enhance functionality. Actively seeking new opportunities as a part-time or flexible full-time full stack engineer.
+        I'm <span className="hl">Malay Patra</span>, an undergraduate (2028) <a href="https://jadavpuruniversity.in">engineering student at Jadavpur University</a>. I am passionate about building dynamic and efficient web applications with the <span className="hl">MERN stack</span>. As a self-taught developer, I am constantly exploring new technologies to sharpen my skills.
+      </p>
+      <p>
+        In 2023, I began my freelancing journey on <span className="hl">Upwork</span>, collaborating with clients before pausing in mid-2024 to focus on advancing my technical expertise and balancing my engineering academics. I have also gained hands-on experience working with <span className="hl">startups</span>, contributing to real-world projects and production environments.
+      </p>
+      <p>
+        Currently, I am <span className="hl">actively seeking a full-stack web developer role</span> where I can apply my skills, grow professionally, and build impactful digital solutions
       </p>
       <p>Let’s build something great! ✨</p>
       <a href="https://drive.google.com/file/d/1ndeSxjR6InKTRdrs69jDwf1PTqHN_JSt/view" target='_blank'>

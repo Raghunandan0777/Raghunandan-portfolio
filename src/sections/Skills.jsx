@@ -22,43 +22,56 @@ export default function Skills() {
                     <Toggle value={playMode} onToggle={handleToggle} />
                 </div>
             </div>
-            {playMode && <p className='play-info'><i>move your cursor over the items quickly to see satisfying color animation.</i></p>}
-            <SkillCard heading='Frontend' skills={[
+            {playMode && (
+                <p className='play-info'>
+                    <i>move your cursor over the items quickly to see satisfying color animation.</i>
+                </p>
+            )}
+
+            <SkillCard heading='Frontend' hcolor="#FF6F61" skills={[
                 { 'name': 'HTML', 'icon': 'html5' },
                 { 'name': 'CSS', 'icon': 'css3' },
                 { 'name': 'JavaScript', 'icon': 'javascript' },
                 { 'name': 'React', 'icon': 'react' },
-                { 'name': 'Bootstrap', 'icon': 'bootstrap' },
                 { 'name': 'Tailwind CSS', 'icon': 'tailwindcss' },
                 { 'name': 'shadcn/ui', 'icon': 'https://simpleicons.org/icons/shadcnui.svg' },
             ]} playMode={playMode} />
-            <SkillCard heading='Backend' hcolor="var(--clr-accent2)" skills={[
+
+            <SkillCard heading='Backend' hcolor="#6A5ACD" skills={[
                 { 'name': 'Node.js', 'icon': 'nodejs' },
                 { 'name': 'Express', 'icon': 'express' },
-                { 'name': 'Python', 'icon': 'python' },
+                { 'name': 'Next.js', 'icon': 'nextjs' },
+                { 'name': 'Supabase', 'icon': 'supabase' },
                 { 'name': 'Flask', 'icon': 'flask' },
+                { 'name': 'REST APIs', 'icon': '' },
+            ]} playMode={playMode} />
+
+            <SkillCard heading='Databases' hcolor="#FFB400" skills={[
                 { 'name': 'MongoDB', 'icon': 'mongodb' },
                 { 'name': 'PostgreSQL', 'icon': 'postgresql' },
             ]} playMode={playMode} />
-            <SkillCard heading='Tools' hcolor="var(--clr-accent3)" skills={[
+
+            <SkillCard heading='Languages' hcolor="#4CAF50" skills={[
+                { 'name': 'Python', 'icon': 'python' },
+                { 'name': 'C++', 'icon': 'cplusplus' },
+            ]} playMode={playMode} />
+
+            <SkillCard heading='Tools' hcolor="#00BFFF" skills={[
                 { 'name': 'Git', 'icon': 'git' },
                 { 'name': 'GitHub', 'icon': 'github' },
                 { 'name': 'VS Code', 'icon': 'vscode' },
                 { 'name': 'Postman', 'icon': 'postman' },
-                { 'name': 'Heroku', 'icon': 'heroku' },
-                { 'name': 'Netlify', 'icon': 'netlify' },
                 { 'name': 'Vercel', 'icon': 'vercel' },
                 { 'name': 'Figma', 'icon': 'figma' },
             ]} playMode={playMode} />
-            <SkillCard heading='Automation' hcolor="var(--clr-sec)" skills={[
-                { 'name': 'Selenium', 'icon': 'selenium' },
-                { 'name': 'Puppeteer', 'icon': 'puppeteer' },
-                { 'name': 'OpenAI', 'icon': 'https://simpleicons.org/icons/openai.svg' },
-                { 'name': 'Web Scraping', 'icon': '' },
-                { 'name': 'Gemini', 'icon': 'https://simpleicons.org/icons/googlegemini.svg' },
-                { 'name': 'Hugginface', 'icon': 'https://simpleicons.org/icons/huggingface.svg' },
-            ]} playMode={playMode} />
 
+            <SkillCard heading='Extras' hcolor="#FF69B4" skills={[
+                { 'name': 'Selenium', 'icon': 'selenium' },
+                { 'name': 'Web Scraping', 'icon': 'https://simpleicons.org/icons/chromewebstore.svg' },
+                { 'name': 'OpenAI', 'icon': 'https://simpleicons.org/icons/openai.svg' },
+                { 'name': 'HuggingFace', 'icon': 'https://simpleicons.org/icons/huggingface.svg' },
+                { 'name': 'Gemini', 'icon': 'https://simpleicons.org/icons/googlegemini.svg' },
+            ]} playMode={playMode} />
         </div>
     )
 }
