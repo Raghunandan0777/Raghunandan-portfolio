@@ -31,15 +31,18 @@ export default function Home() {
                 </div>
                 <div className='hero-2'>
                     <div>
-                        <div>
+                        <div className='pf-info'>
                             <div className='malay-img-cont'>
                                 <img src={Quby} alt="Malay" className='malay-img' />
                             </div>
-                            <div>Hi, I'm Malay<span className="wave">👋</span></div>
+                            <div>
+                                <span className='country-badge'>📍India</span>
+                                <p className='name'>Hi, I'm Malay<span className="wave">👋</span></p>
+                            </div>
                         </div>
                         <div>
-                            <Sparkles scale={1.5} color="#ff0">
-                                <h1><span className='outlined-txt'>FULLSTACK</span></h1>
+                            <Sparkles scale={1.5} color="#c3dbffff">
+                                <h1>FULLSTACK</h1>
                                 <h1><span className='shine-txt'>DEVELOPER</span> &</h1>
                                 <h1><span className='highlight-txt'>API</span> EXPERT</h1>
                             </Sparkles>

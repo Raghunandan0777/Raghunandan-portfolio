@@ -1,8 +1,18 @@
-
-
 import React from 'react'
 
-export default function Card({ heading = ' ', skills = [], hcolor = 'var(--clr-accent)' }) {
+export default function Card({ heading = ' ', skills = [], hcolor = 'var(--clr-accent)', playMode = false }) {
+  if (playMode) {
+    return (
+      <>
+        {skills.map((skill, index) => (
+          <li key={index} className='skill-list-li' style={{ '--clr': hcolor }}>
+            {skill.icon && <img src={skill.icon.startsWith('https://') ? skill.icon : `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${skill.icon}/${skill.icon}-original.svg`} alt={skill.name} width="16px" height="16px" />}
+            <span>{skill.name}</span>
+          </li>
+        ))}
+      </>
+    )
+  }
   return (
     <div className='skill-card' style={{ '--clr': hcolor, color: 'var(--clr)' }}>
       <h3>
@@ -13,7 +23,7 @@ export default function Card({ heading = ' ', skills = [], hcolor = 'var(--clr-a
       </h3>
       <ul className='skill-list'>
         {skills.map((skill, index) => (
-          <li key={index}>
+          <li key={index} className='skill-list-li'>
             {skill.icon && <img src={skill.icon.startsWith('https://') ? skill.icon : `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${skill.icon}/${skill.icon}-original.svg`} alt={skill.name} width="16px" height="16px" />}
             <span>{skill.name}</span>
           </li>

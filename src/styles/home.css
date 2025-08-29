@@ -24,13 +24,21 @@
     text-align: center;
 }
 
-.hero-2>div>div:nth-child(1) {
+.pf-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.hero-2>div>div:nth-child(1) .name {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    gap: 12px;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin: 0;
 }
 
 .hero-2>div>div:nth-child(2) h1 {
@@ -60,8 +68,8 @@
 }
 
 .malay-img-cont {
-    width: 42px;
-    height: 42px;
+    width: 3.5rem;
+    height: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,12 +151,6 @@
 .dark .cloud-3,
 .dark .cloud-4 {
     opacity: .5;
-}
-
-.outlined-txt {
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: var(--clr-accent);
-    color: transparent;
 }
 
 .shine-txt {

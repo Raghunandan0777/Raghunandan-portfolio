@@ -90,7 +90,7 @@ export const particleNasaTheme = (theme) => ({
                 "duration": 2,
                 "mix": false,
                 "opacity": 0,
-                "size": 0,
+                "size": 5,
                 "divs": {
                     "distance": 200,
                     "duration": 0.4,
