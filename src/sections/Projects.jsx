@@ -18,7 +18,7 @@ export default function Projects() {
               <Tag hashtag="Tailwind Css" />
             </Tags>
           </Content>
-          <CardActions visit="https://upmagic.vercel.app" source="https://github.com/malay77patra/upmagic" />
+          <CardActions visit="https://voidide.vercel.app" source="https://github.com/malay77patra/flameide" />
         </ProjectCard>
         <ProjectCard>
           <img src='hotkeys.png' alt='HOTKEYS' />
