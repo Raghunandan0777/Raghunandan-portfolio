@@ -41,7 +41,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div>
-                            <Sparkles scale={1.5} color="#c3dbffff">
+                            <Sparkles scale={1.5}>
                                 <h1>FULLSTACK</h1>
                                 <h1><span className='shine-txt'>DEVELOPER</span> &</h1>
                                 <h1><span className='highlight-txt'>API</span> EXPERT</h1>

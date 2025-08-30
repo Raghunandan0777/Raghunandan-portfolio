@@ -14,7 +14,7 @@ const reviews = [
     },
     {
         name: "Bhabya Ranjan",
-        username: "Bokaro",
+        username: "India",
         body: "Malay is very good at Flask anb Html/Css/js wev development, I would like to hire him for long term project based jobs...",
     },
     {

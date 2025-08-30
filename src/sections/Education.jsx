@@ -25,7 +25,7 @@ export default function Education() {
                         <TimelineItem icon={<College />} bgColor="#444444">
                             <h4>Jadavpur University [B.E.]</h4>
                             <TimeStamp stamp="2024 - 2028" />
-                            <p>Current SGPA: (upcoming)</p>
+                            <p>Current CGPA: 8.41</p>
                         </TimelineItem>
                     </Timeline>
                 </div>
