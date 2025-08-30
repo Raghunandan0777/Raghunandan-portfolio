@@ -1,13 +1,13 @@
 import { ThemeContext } from "../context/ThemeContext"
 import { useContext } from "react"
 import { Cloud, renderSimpleIcon } from 'react-icon-cloud';
-import { siPython, siReact, siJavascript, siMongodb, siExpress, siVite, siGit, siGithub, siVercel, siMui, siHtml5, siCss, siTailwindcss, siSelenium, siCanva, siHeroku, siGooglegemini, siOpenai, siHuggingface, siNodedotjs, siSupabase, siBootstrap, siFigma } from 'simple-icons';
+import { siPython, siReact, siJavascript, siMongodb, siExpress, siVite, siGit, siGithub, siVercel, siMui, siHtml5, siCss, siTailwindcss, siSelenium, siCanva, siHeroku, siGooglegemini, siOpenai, siHuggingface, siNodedotjs, siSupabase, siBootstrap, siFigma, siNextdotjs } from 'simple-icons';
 
-const cloudIcons = [siPython, siReact, siJavascript, siMongodb, siExpress, siVite, siGit, siGithub, siVercel, siMui, siHtml5, siCss, siTailwindcss, siSelenium, siCanva, siHeroku, siGooglegemini, siOpenai, siHuggingface, siNodedotjs, siSupabase, siBootstrap, siFigma];
+const cloudIcons = [siPython, siReact, siJavascript, siMongodb, siExpress, siVite, siGit, siGithub, siVercel, siMui, siHtml5, siCss, siTailwindcss, siSelenium, siCanva, siHeroku, siGooglegemini, siOpenai, siHuggingface, siNodedotjs, siSupabase, siBootstrap, siFigma, siNextdotjs];
 
 
 const IconCloud = () => {
-    const { theme, toggleTheme } = useContext(ThemeContext);
+    const { theme } = useContext(ThemeContext);
 
     const icons = [...cloudIcons].map((icon) => {
         return renderSimpleIcon({

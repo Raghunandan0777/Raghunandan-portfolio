@@ -12,7 +12,7 @@ import Souloxy from '../assets/souloxy.png'
 
 export default function Experience() {
     return (
-        <div className='experience-section section' style={{ paddingBottom: '0' }}>
+        <div className='experience-section section' style={{ paddingBottom: '0' }} id="experience">
             <h2>Work Experience</h2>
             <div className='experience reverse'>
                 <div className='details'>
@@ -56,7 +56,7 @@ export default function Experience() {
                     <h3>Open Source Contribution</h3>
                     <p>Actively contributed to open-source projects by developing new features, resolving issues, and enhancing documentation. Engaged with the community through code reviews and discussions to drive improvements.</p>
                     <Timeline>
-                        <TimelineItem icon={<Github />} color="#0745a3" to="https://github.com/qubydev">
+                        <TimelineItem icon={<Github />} color="#5f5f5fff" to="https://github.com/qubydev">
                             <h4>Github</h4>
                             <TimeStamp stamp="2022 - now" />
                             <p>Contributed to repositories, collaborating on code, issues, and pull requests.</p>

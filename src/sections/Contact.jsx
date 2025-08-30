@@ -3,7 +3,7 @@ import '../styles/contact.css'
 
 export default function Contact() {
     return (
-        <div className='section contact-section'>
+        <div className='section contact-section' id="contact">
             <h2>Contact</h2>
             <div className='heading-center'>
                 <Sparkles>

@@ -13,7 +13,7 @@ export default function Skills() {
     }
 
     return (
-        <div className='skills-section section'>
+        <div className='skills-section section' id="skills">
             <div className='skills-header'>
                 <h2>Skills</h2>
                 <div style={{

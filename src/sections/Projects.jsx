@@ -3,14 +3,14 @@ import ProjectCard, { Holder, Content, Tags, Tag, CardActions } from '../compone
 
 export default function Projects() {
   return (
-    <div className='section projects-section'>
+    <div className='section projects-section' id="projects">
       <h2>Projects</h2>
       <Holder>
         <ProjectCard>
-          <img src='upmagic.png' alt='Upmagic' />
+          <img src='voidide.png' alt='VoidIDE' />
           <Content>
-            <h3>Upmagic</h3>
-            <p>An AI-powered Upwork proposal generator that creates compelling proposals with just one click. Built using the secret strategies and proven techniques of top-rated freelancers to help you land more jobs and stand out from the competition.</p>
+            <h3>VoidIDE</h3>
+            <p>A web-based IDE powered by OneCompiler, tailored for competitive programming and DSA in multiple languages. No installation required—just hit "Run" and start coding!</p>
             <Tags>
               <Tag hashtag="React" />
               <Tag hashtag="GenAI" />

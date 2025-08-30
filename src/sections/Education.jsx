@@ -8,7 +8,7 @@ import '../styles/education.css';
 
 export default function Education() {
     return (
-        <div className='section education-section'>
+        <div className='section education-section' id='education'>
             <h2>Education</h2>
             <div className='education'>
                 <div className="illustration">

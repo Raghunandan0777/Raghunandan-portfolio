@@ -6,7 +6,7 @@ export default function About() {
 
 
   return (
-    <div className='about-section section'>
+    <div className='about-section section' id="about">
       <h2>About</h2>
       <p>
         I'm <span className="hl">Malay Patra</span>, an undergraduate (2028) <a href="https://jadavpuruniversity.in">engineering student at Jadavpur University</a>. I am passionate about building dynamic and efficient web applications with the <span className="hl">MERN stack</span>. As a self-taught developer, I am constantly exploring new technologies to sharpen my skills.

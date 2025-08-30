@@ -10,11 +10,13 @@ import Education from './sections/Education'
 import Projects from './sections/Projects'
 import Contact from './sections/Contact'
 import Reviews from './sections/Reviews'
+import Menu from './sections/Menu'
 
 function App() {
 
   return (
     <>
+      <Menu />
       <Home />
       <About />
       <Skills />

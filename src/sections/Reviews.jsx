@@ -28,7 +28,7 @@ const reviews = [
 
 export default function Reviews() {
     return (
-        <div className="section reviews-section">
+        <div className="section reviews-section" id="testimonials">
             <h2>Reviews</h2>
             <Marquee pauseOnHover={true} speed={100} gradient={true} gradientColor="var(--clr-bg)">
                 {reviews.map((review, index) => {
