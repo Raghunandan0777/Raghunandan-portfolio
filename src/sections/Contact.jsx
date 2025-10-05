@@ -11,7 +11,7 @@ export default function Contact() {
                 </Sparkles>
             </div>
             <p className='contact-text'>
-                Have questions? Ping me with a <a href="https://www.linkedin.com/in/malaypatra/">linkedin</a> DM or email at <a href='mailto:malay88patra@gmail.com'>malay88patra@gmail.com</a>.
+                Have questions? Ping me with a <a href="https://www.linkedin.com/in/raghunandan-shah-399364220/">linkedin</a> DM or email at <a href='raghunandanshah908014@gmail.com'>raghunandanshah908014@gmail.com</a>.
             </p>
         </div >
     )

@@ -17,15 +17,15 @@ export default function Education() {
                 <div className='details'>
                     <Timeline>
                         <TimelineItem icon={<School />} bgColor="#444444">
-                            <h4>ENV High School [10+2]</h4>
-                            <TimeStamp stamp="2014 - 2022" />
-                            <p>10th grade percentage: 84.85%</p>
-                            <p>12th grade percentage: 78.6%</p>
+                            <h4>SMT G.N Pandaya High School [10+2]</h4>
+                            <TimeStamp stamp="2019 - 2021" />
+                            <p>10th grade percentage: 70%</p>
+                            <p>12th grade percentage: 74.6%</p>
                         </TimelineItem>
                         <TimelineItem icon={<College />} bgColor="#444444">
-                            <h4>Jadavpur University [B.E.]</h4>
-                            <TimeStamp stamp="2024 - 2028" />
-                            <p>Current CGPA: 8.41</p>
+                            <h4>Parul University [B.E.]</h4>
+                            <TimeStamp stamp="2021 - 2025" />
+                            <p>Current CGPA: 6.41</p>
                         </TimelineItem>
                     </Timeline>
                 </div>

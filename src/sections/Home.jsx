@@ -37,7 +37,7 @@ export default function Home() {
                             </div>
                             <div>
                                 <span className='country-badge'>📍India</span>
-                                <p className='name'>Hi, I'm Malay<span className="wave">👋</span></p>
+                                <p className='name'>Hi, I'm Raghunandan Shah<span className="wave">👋</span></p>
                             </div>
                         </div>
                         <div>

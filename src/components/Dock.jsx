@@ -22,13 +22,13 @@ const Dock = ({ ...props }) => {
                 }}
             />
             <DockButton data-tooltip-content="Github" >
-                <SvgIcon icon={Github} target="_blank" to="https://github.com/malay77patra" />
+                <SvgIcon icon={Github} target="_blank" to="https://github.com/Raghunandan0777" />
             </DockButton>
             <DockButton data-tooltip-content="Linkedin">
-                <SvgIcon icon={Linkedin} target="_blank" to="https://www.linkedin.com/in/malaypatra/" />
+                <SvgIcon icon={Linkedin} target="_blank" to="https://www.linkedin.com/in/raghunandan-shah-399364220/" />
             </DockButton>
             <DockButton data-tooltip-content="Mail">
-                <SvgIcon icon={Mail} target="_blank" to="mailto:malay88patra@gmail.com" />
+                <SvgIcon icon={Mail} target="_blank" to="raghunandanshah908014@gmail.com" />
             </DockButton>
             <DockButton data-tooltip-content="Theme" onClick={toggleTheme}>
                 <ThemeToggle theme={theme} />

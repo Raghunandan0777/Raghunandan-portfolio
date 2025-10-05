@@ -44,9 +44,9 @@ export default function Skills() {
             <SkillCard heading='Backend' hcolor="#6A5ACD" skills={[
                 { 'name': 'Node.js', 'icon': 'nodejs' },
                 { 'name': 'Express', 'icon': 'express' },
-                { 'name': 'Next.js', 'icon': 'nextjs' },
+                // { 'name': 'Next.js', 'icon': 'nextjs' },
                 { 'name': 'Supabase', 'icon': 'supabase' },
-                { 'name': 'Flask', 'icon': 'flask' },
+                // { 'name': 'Flask', 'icon': 'flask' },
                 { 'name': 'REST APIs', 'icon': '' },
             ]} playMode={playMode} />
 
@@ -57,7 +57,7 @@ export default function Skills() {
 
             <SkillCard heading='Languages' hcolor="#4CAF50" skills={[
                 { 'name': 'Python', 'icon': 'python' },
-                { 'name': 'C++', 'icon': 'cplusplus' },
+                { 'name': 'Java', 'icon': 'java' },
             ]} playMode={playMode} />
 
             <SkillCard heading='Tools' hcolor="#00BFFF" skills={[
